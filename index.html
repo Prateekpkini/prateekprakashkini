@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prateek Prakash Kini | AI/ML Developer</title>
-    <link rel="icon" type="image/x-icon" href="./images/rocket1.webp">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,6 +41,7 @@
 
         html {
             scroll-behavior: smooth;
+            scroll-padding-top: 100px; /* Prevents header from hiding content when jumping to links */
         }
 
         body {
@@ -152,11 +152,17 @@
         /* Hero Section */
         .hero {
             padding: 10rem 0 5rem;
+            min-height: 100vh;
             display: flex;
             align-items: center;
-            justify-content: space-between; /* Ensures even spacing */
+        }
+
+        .hero-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             gap: 4rem;
-            min-height: 100vh;
+            width: 100%;
         }
 
         .hero-content {
@@ -172,10 +178,9 @@
             justify-content: center;
             align-items: center;
             position: relative;
-            max-width: 450px; /* Constrain the container width */
+            max-width: 450px;
         }
 
-        /* UPDATED IMAGE STYLING */
         .hero-image img {
             width: 100%;
             height: auto;
@@ -187,8 +192,8 @@
             position: relative;
             z-index: 3;
             object-fit: cover;
-            object-position: top center; /* Ensures the face stays in view if cropped */
-            aspect-ratio: 4/5; /* Slightly taller aspect ratio often works better for portraits than 1/1 */
+            object-position: top center;
+            aspect-ratio: 4/5; 
         }
 
         .hero-image img:hover {
@@ -256,7 +261,7 @@
             box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3), 0 0 20px rgba(99, 102, 241, 0.1);
             position: relative;
             overflow: hidden;
-            white-space: nowrap; /* Prevents button text from breaking on small screens */
+            white-space: nowrap;
         }
 
         .btn::before {
@@ -730,10 +735,12 @@
         /* RESPONSIVE DESIGN UPDATES */
         @media (max-width: 992px) {
             .hero { 
-                flex-direction: column-reverse; /* Puts text above image on medium screens */
-                text-align: center; 
-                gap: 3rem; 
-                padding-top: 8rem;
+                padding-top: 10rem;
+                min-height: auto;
+            }
+            .hero-container {
+                flex-direction: column-reverse; /* Put image above text */
+                text-align: center;
             }
             .hero-content {
                 align-items: center;
@@ -744,18 +751,30 @@
         }
 
         @media (max-width: 768px) {
-            .nav-container { flex-direction: column; gap: 1rem; }
-            .nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+            html {
+                scroll-padding-top: 180px; /* Accounts for tall double-line mobile header */
+            }
+
+            .nav-container { flex-direction: column; gap: 0.5rem; padding: 1rem 0; }
+            .nav-links { gap: 0.8rem; flex-wrap: wrap; justify-content: center; }
+            .nav-links a { font-size: 0.85rem; padding: 0.2rem 0; }
             .nav-indicator { display: none; }
+            
+            .hero { 
+                padding-top: 14rem; /* Forces content below the tall mobile menu */
+            }
             
             h1 { font-size: 2.5rem; }
             
+            .hero-image {
+                width: 100%;
+            }
             .hero-image img {
-                max-width: 300px; /* Smaller image on mobile */
+                max-width: 280px; /* Prevents image from being too massive on phones */
             }
             
             .hero-buttons { 
-                flex-direction: column; /* Stack buttons on smaller screens */
+                flex-direction: column; 
                 width: 100%;
                 max-width: 300px;
             }
@@ -767,23 +786,15 @@
 
             .projects-grid, .achievements-grid { grid-template-columns: 1fr; }
             
-            .timeline::before {
-                left: 0;
-            }
-            .timeline-item {
-                padding-left: 2rem;
-            }
-            .timeline-dot {
-                left: -7px;
-                width: 14px;
-                height: 14px;
-            }
+            .timeline::before { left: 0; }
+            .timeline-item { padding-left: 2rem; }
+            .timeline-dot { left: -7px; width: 14px; height: 14px; }
         }
         
         @media (max-width: 480px) {
             h1 { font-size: 2rem; }
             .hero-image img {
-                max-width: 250px;
+                max-width: 240px;
             }
         }
 
@@ -809,7 +820,7 @@
     <header>
         <div class="container nav-container">
             <div class="logo">
-                <i class="fa-solid fa-rocket"></i> Prateek
+                Prateek
             </div>
             <nav class="nav-links">
                 <div class="nav-indicator"></div>
@@ -825,8 +836,8 @@
     </header>
 
     <section class="hero" id="about">
-        <div class="container hero-container" style="display: flex; flex-wrap: wrap-reverse; align-items: center; justify-content: center; gap: 3rem;">
-            <div class="hero-content fade-in" style="flex: 1 1 400px; text-align: left;">
+        <div class="container hero-container">
+            <div class="hero-content fade-in">
                 <span class="greeting">Hello, I'm</span>
                 <h1>Prateek Prakash Kini</h1>
                 <p class="hero-about">
@@ -842,7 +853,7 @@
                     </a>
                 </div>
             </div>
-            <div class="hero-image fade-in delay-1" style="flex: 1 1 300px; display: flex; justify-content: center;">
+            <div class="hero-image fade-in delay-1">
                 <img src="./images/dp.jpg" alt="Prateek Prakash Kini">
             </div>
         </div>
