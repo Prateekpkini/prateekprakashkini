@@ -3,13 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="google-site-verification" content="zAer6SJRpGM65soaJMrY0EDBcHPKHk5ls6ePCpbGDd0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prateek Prakash Kini | AI/ML Developer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -41,7 +44,8 @@
 
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 100px; /* Prevents header from hiding content when jumping to links */
+            scroll-padding-top: 100px;
+            /* Prevents header from hiding content when jumping to links */
         }
 
         body {
@@ -131,7 +135,8 @@
             transition: var(--transition);
         }
 
-        .nav-links a:hover::after, .nav-links a.active::after {
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
             width: 100%;
         }
 
@@ -193,7 +198,7 @@
             z-index: 3;
             object-fit: cover;
             object-position: top center;
-            aspect-ratio: 4/5; 
+            aspect-ratio: 4/5;
         }
 
         .hero-image img:hover {
@@ -239,7 +244,7 @@
             margin-bottom: 2rem;
             max-width: 600px;
         }
-        
+
         .hero-buttons {
             display: flex;
             gap: 1rem;
@@ -628,7 +633,8 @@
             font-size: 1.1rem;
         }
 
-        .contact-details a, .contact-details p {
+        .contact-details a,
+        .contact-details p {
             color: var(--gray);
             text-decoration: none;
             transition: var(--transition);
@@ -669,9 +675,23 @@
             box-shadow: 0 12px 25px -3px rgba(0, 0, 0, 0.3);
         }
 
-        #linkedin:hover { background: #0A66C2; border-color: #0A66C2; color: white; }
-        #github:hover { background: #333; border-color: #555; color: white; }
-        #whatsapp:hover { background: #25D366; border-color: #25D366; color: white; }
+        #linkedin:hover {
+            background: #0A66C2;
+            border-color: #0A66C2;
+            color: white;
+        }
+
+        #github:hover {
+            background: #333;
+            border-color: #555;
+            color: white;
+        }
+
+        #whatsapp:hover {
+            background: #25D366;
+            border-color: #25D366;
+            color: white;
+        }
 
         /* Footer */
         footer {
@@ -729,83 +749,186 @@
             filter: blur(40px);
         }
 
-        .shape-1 { width: 500px; height: 500px; top: -250px; right: -250px; }
-        .shape-2 { width: 300px; height: 300px; bottom: -150px; left: -150px; }
+        .shape-1 {
+            width: 500px;
+            height: 500px;
+            top: -250px;
+            right: -250px;
+        }
+
+        .shape-2 {
+            width: 300px;
+            height: 300px;
+            bottom: -150px;
+            left: -150px;
+        }
 
         /* RESPONSIVE DESIGN UPDATES */
         @media (max-width: 992px) {
-            .hero { 
+            .hero {
                 padding-top: 10rem;
                 min-height: auto;
             }
+
             .hero-container {
-                flex-direction: column-reverse; /* Put image above text */
+                flex-direction: column-reverse;
+                /* Put image above text */
                 text-align: center;
             }
+
             .hero-content {
                 align-items: center;
             }
-            h1 { font-size: 3rem; }
-            .hero-about { margin: 0 auto 2rem; }
-            .hero-buttons { justify-content: center; }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            .hero-about {
+                margin: 0 auto 2rem;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
         }
 
         @media (max-width: 768px) {
             html {
-                scroll-padding-top: 180px; /* Accounts for tall double-line mobile header */
+                scroll-padding-top: 180px;
+                /* Accounts for tall double-line mobile header */
             }
 
-            .nav-container { flex-direction: column; gap: 0.5rem; padding: 1rem 0; }
-            .nav-links { gap: 0.8rem; flex-wrap: wrap; justify-content: center; }
-            .nav-links a { font-size: 0.85rem; padding: 0.2rem 0; }
-            .nav-indicator { display: none; }
-            
-            .hero { 
-                padding-top: 14rem; /* Forces content below the tall mobile menu */
+            .nav-container {
+                flex-direction: column;
+                gap: 0.5rem;
+                padding: 1rem 0;
             }
-            
-            h1 { font-size: 2.5rem; }
-            
+
+            .nav-links {
+                gap: 0.8rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-links a {
+                font-size: 0.85rem;
+                padding: 0.2rem 0;
+            }
+
+            .nav-indicator {
+                display: none;
+            }
+
+            .hero {
+                padding-top: 14rem;
+                /* Forces content below the tall mobile menu */
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
             .hero-image {
                 width: 100%;
             }
+
             .hero-image img {
-                max-width: 280px; /* Prevents image from being too massive on phones */
+                max-width: 280px;
+                /* Prevents image from being too massive on phones */
             }
-            
-            .hero-buttons { 
-                flex-direction: column; 
+
+            .hero-buttons {
+                flex-direction: column;
                 width: 100%;
                 max-width: 300px;
             }
-            
+
             .btn {
                 width: 100%;
                 justify-content: center;
             }
 
-            .projects-grid, .achievements-grid { grid-template-columns: 1fr; }
-            
-            .timeline::before { left: 0; }
-            .timeline-item { padding-left: 2rem; }
-            .timeline-dot { left: -7px; width: 14px; height: 14px; }
+            .projects-grid,
+            .achievements-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline::before {
+                left: 0;
+            }
+
+            .timeline-item {
+                padding-left: 2rem;
+            }
+
+            .timeline-dot {
+                left: -7px;
+                width: 14px;
+                height: 14px;
+            }
         }
-        
+
         @media (max-width: 480px) {
-            h1 { font-size: 2rem; }
+            h1 {
+                font-size: 2rem;
+            }
+
             .hero-image img {
                 max-width: 240px;
             }
         }
 
         /* Animations */
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        .fade-in { animation: fadeIn 1s ease forwards; opacity: 0; }
-        .delay-1 { animation-delay: 0.2s; }
-        .delay-2 { animation-delay: 0.4s; }
-        .delay-3 { animation-delay: 0.6s; }
-        @keyframes pulse { 0% { transform: scale(1); box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3); } 50% { transform: scale(1.03); box-shadow: 0 8px 25px rgba(99, 102, 241, 0.5); } 100% { transform: scale(1); box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3); } }
-        .pulse { animation: pulse 2.5s infinite; }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+            opacity: 0;
+        }
+
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+
+        .delay-3 {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+            }
+
+            50% {
+                transform: scale(1.03);
+                box-shadow: 0 8px 25px rgba(99, 102, 241, 0.5);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+            }
+        }
+
+        .pulse {
+            animation: pulse 2.5s infinite;
+        }
     </style>
 </head>
 
@@ -869,7 +992,8 @@
                     <h3 class="timeline-title">Intern</h3>
                     <div class="timeline-subtitle">Sumana Embedded Technologies, Bengaluru</div>
                     <div class="timeline-content">
-                        <p>Worked under the guidance of <strong>Rajesh Kini</strong>, System Architect, on the <strong>IoT Data Monitoring (low and medium data rate)</strong> project.</p>
+                        <p>Worked under the guidance of <strong>Rajesh Kini</strong>, System Architect, on the
+                            <strong>IoT Data Monitoring (low and medium data rate)</strong> project.</p>
                         <div class="skills-tags">
                             <span class="skill-tag">Node.js</span>
                             <span class="skill-tag">Google Cloud</span>
@@ -884,7 +1008,8 @@
                     <h3 class="timeline-title">DC's Fellow</h3>
                     <div class="timeline-subtitle">District Administration of Mangaluru</div>
                     <div class="timeline-content">
-                        <p>Worked on <strong>Digital Material-Recovery Facility Management System</strong> under UDAL Fellowship.</p>
+                        <p>Worked on <strong>Digital Material-Recovery Facility Management System</strong> under UDAL
+                            Fellowship.</p>
                         <div class="skills-tags">
                             <span class="skill-tag">Node.js</span>
                             <span class="skill-tag">React</span>
@@ -905,7 +1030,9 @@
                     <div class="timeline-date">2023 - Present</div>
                     <h3 class="timeline-title">Bachelor of Engineering in AI & ML</h3>
                     <div class="timeline-subtitle">Canara Engineering College, Mangaluru</div>
-                    <div class="timeline-content"><p>CGPA: 8.9/10</p></div>
+                    <div class="timeline-content">
+                        <p>CGPA: 8.9/10</p>
+                    </div>
                 </div>
                 <div class="timeline-item fade-in delay-1">
                     <div class="timeline-dot"></div>
@@ -979,7 +1106,7 @@
     <section id="achievements" style="background: rgba(0, 0, 0, 0.2);">
         <div class="container">
             <h2 class="section-title fade-in">Achievements & Leadership</h2>
-            
+
             <div class="achievements-grid">
                 <div class="achievement-card fade-in">
                     <div class="achievement-icon">
@@ -1061,9 +1188,12 @@
                 <div class="project-card fade-in">
                     <div class="project-content">
                         <h3 class="project-title">SwachaPatha</h3>
-                        <p class="project-description">Digital waste management system tailored for rural Gram Panchayats, addressing inefficient garbage collection, poor fee tracking, and manual route planning.</p>
+                        <p class="project-description">Digital waste management system tailored for rural Gram
+                            Panchayats, addressing inefficient garbage collection, poor fee tracking, and manual route
+                            planning.</p>
                         <div style="margin-top: auto;">
-                            <a href="https://github.com/Prateekpkini/SwachaPatha" class="btn btn-outline" target="_blank">
+                            <a href="https://github.com/Prateekpkini/SwachaPatha" class="btn btn-outline"
+                                target="_blank">
                                 <i class="fa-brands fa-github"></i> View GitHub
                             </a>
                         </div>
@@ -1073,9 +1203,11 @@
                 <div class="project-card fade-in delay-1">
                     <div class="project-content">
                         <h3 class="project-title">Material Recovery Facility</h3>
-                        <p class="project-description">Digital management system for waste recovery facilities developed during the UDAL Fellowship with Mangaluru District Administration.</p>
+                        <p class="project-description">Digital management system for waste recovery facilities developed
+                            during the UDAL Fellowship with Mangaluru District Administration.</p>
                         <div style="margin-top: auto;">
-                            <a href="https://github.com/Prateekpkini/Digital-MRFs" class="btn btn-outline" target="_blank">
+                            <a href="https://github.com/Prateekpkini/Digital-MRFs" class="btn btn-outline"
+                                target="_blank">
                                 <i class="fa-brands fa-github"></i> View GitHub
                             </a>
                         </div>
@@ -1085,16 +1217,18 @@
                 <div class="project-card fade-in delay-2">
                     <div class="project-content">
                         <h3 class="project-title">TensorFlow Intent Chatbot</h3>
-                        <p class="project-description">A chatbot delivering responses based on an intents dataset. Utilizes Streamlit for the frontend and TensorFlow for confidence level checking.</p>
+                        <p class="project-description">A chatbot delivering responses based on an intents dataset.
+                            Utilizes Streamlit for the frontend and TensorFlow for confidence level checking.</p>
                         <div style="margin-top: auto;">
-                            <a href="https://github.com/Prateekpkini/Chatbot_using_intents_and_tensorflow" class="btn btn-outline" target="_blank">
+                            <a href="https://github.com/Prateekpkini/Chatbot_using_intents_and_tensorflow"
+                                class="btn btn-outline" target="_blank">
                                 <i class="fa-brands fa-github"></i> View GitHub
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div style="text-align: center; margin-top: 3.5rem;" class="fade-in delay-3">
                 <a href="https://github.com/Prateekpkini?tab=repositories" class="btn pulse" target="_blank">
                     <i class="fa-brands fa-github"></i> Explore All Projects on GitHub
@@ -1106,7 +1240,7 @@
     <section id="contact" style="background: rgba(0, 0, 0, 0.2);">
         <div class="container">
             <h2 class="section-title fade-in" style="text-align: center; display: block;">Get In Touch</h2>
-            
+
             <div class="contact-wrapper fade-in delay-1">
                 <div class="contact-grid">
                     <div class="contact-item">
@@ -1135,13 +1269,15 @@
                 </div>
 
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/prateek-prakash-kini" class="social-btn" id="linkedin" target="_blank">
+                    <a href="https://www.linkedin.com/in/prateek-prakash-kini" class="social-btn" id="linkedin"
+                        target="_blank">
                         <i class="fa-brands fa-linkedin"></i> LinkedIn
                     </a>
                     <a href="https://github.com/Prateekpkini" class="social-btn" id="github" target="_blank">
                         <i class="fa-brands fa-github"></i> GitHub
                     </a>
-                    <a href="https://wa.me/8217785509?text=Namaste🙏🏽" class="social-btn" id="whatsapp" target="_blank">
+                    <a href="https://wa.me/8217785509?text=Namaste🙏🏽" class="social-btn" id="whatsapp"
+                        target="_blank">
                         <i class="fa-brands fa-whatsapp"></i> WhatsApp
                     </a>
                 </div>
@@ -1250,7 +1386,7 @@
             }
 
             window.addEventListener('scroll', throttle(setActiveLink, 100));
-            
+
             // Wait for fonts to load before setting initial indicator width
             document.fonts.ready.then(() => {
                 setActiveLink();
@@ -1291,4 +1427,5 @@
         });
     </script>
 </body>
+
 </html>
